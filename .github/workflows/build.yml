@@ -70,6 +70,8 @@ jobs:
         uses: swatinem/rust-cache@v2
         with:
           workspaces: "./src-tauri -> target"
+          key: ${{ matrix.platform }}-${{ matrix.arch }}-${{ matrix.target || 'default' }}
+          shared-key: ${{ matrix.platform }}-${{ matrix.arch }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
