@@ -131,7 +131,7 @@ export default {
     async goToGitHubRelease() {
       try {
         // 使用 Tauri API 打开外部链接
-        const releaseUrl = `https://github.com/Zheng-up/zAugment/releases/tag/v${this.latestVersion}`;
+        const releaseUrl = `https://github.com/973606500-pixel/zAugment/releases/tag/v${this.latestVersion}`;
         await invoke("open_url", { url: releaseUrl });
         this.closeUpdateModal();
         this.$emit("show-status", "已打开 GitHub Release 页面", "success");

@@ -1507,7 +1507,7 @@ async fn check_for_updates() -> Result<UpdateCheckResult, String> {
         println!("正在请求 GitHub API... (尝试 {}/3)", attempt);
 
         let mut request = client
-            .get("https://api.github.com/repos/Zheng-up/zAugment/releases/latest")
+            .get("https://api.github.com/repos/973606500-pixel/zAugment/releases/latest")
             .header("Accept", "application/vnd.github.v3+json")
             .header("User-Agent", "ZAugment/1.0");
 

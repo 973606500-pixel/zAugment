@@ -5520,7 +5520,7 @@ const checkForUpdates = async () => {
 
 const openGitHubRepo = async () => {
   try {
-    await invoke("open_url", { url: "https://github.com/Zheng-up/zAugment" });
+    await invoke("open_url", { url: "https://github.com/973606500-pixel/zAugment" });
     showStatus("已在浏览器中打开 GitHub 仓库", "success");
   } catch (error) {
     showStatus("打开 GitHub 仓库失败", "error");
